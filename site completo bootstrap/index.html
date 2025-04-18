@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Projeto bootstrap</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+
+    </head>
+
+    <body >
+        <!--Navbar-->
+        <header>
+            <!-- place navbar here -->
+            <div id="meu-header" ></div>
+        </header>
+
+        <!--Cabeçalho da página (tmb n entendi >w<)-->
+        <header class="container my-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 pt-5">
+
+                    <h1 class="text-center text-md-start mt-5">Com Bootstrap, ideias viram <span class="text-primary">sites responsivos e modernos.</span></h1>
+                    
+                    <p class="lead text-muted text-center text-md-start mt-4">Nossa empresa fabrica <span class="text-primary">sites modernos</span> utilizando o poderoso framework Bootstrap.</p>
+                    
+                    <div class="my-5">
+                        <button class="btn btn-primary btn-lg">Saiba mais</button>
+                        <button class="btn btn-outline-primary btn-lg">Conheça nossos clientes</button>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 p-5">
+
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/10/08/computer-156617_1280.png" class="img-fluid" alt="">
+
+                </div>
+
+            </div>
+        </header>
+
+        <!--Cards-->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <i class="bi bi-people-fill ms-3 tamanhoicon coricon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Clientes</h5>
+                            <p class="card-text">Conheça nossos principais clientes que apostaram em nossa empresa.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <i class="bi bi-cloud-check-fill tamanhoicon coricon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Servidores</h5>
+                            <p class="card-text">Conheça nossos servidores de hospedagem na nuvem.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <i class="bi bi-gear-fill tamanhoicon coricon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Detalhes técnicos</h5>
+                            <p class="card-text">As especificações de nossos sistemas são levantadas sempre pensando nas necessidades dos clientes.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <main>
+
+           
+
+
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div id="meu-footer"></div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+
+
+
+        <script>
+            // Incluir o header
+            fetch('header.html')
+              .then(res => res.text())
+              .then(data => document.getElementById('meu-header').innerHTML = data);
+          
+            // Incluir o footer
+            fetch('footer.html')
+              .then(res => res.text())
+              .then(data => document.getElementById('meu-footer').innerHTML = data);
+        </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+    </body>
+</html>
